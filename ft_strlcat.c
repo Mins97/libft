@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 20:51:43 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 05:01:46 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 05:05:55 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 	size_t result_size;
 	size_t src_i;
 
-	if (!dest || !src)
-		return (0);
 	result_size = ft_strlen(dest);
 	result_i = 0;
 	src_i = 0;
@@ -27,7 +25,7 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 		return (ft_strlen(src));
 	while (dest[result_i])
 		result_i++;
-	while (src[src_i] && (result_i + src_i < size - 1))
+	while (src[src_i] && (result_i + src_i + 1 < size))
 	{
 		dest[result_i + src_i] = src[src_i];
 		src_i++;

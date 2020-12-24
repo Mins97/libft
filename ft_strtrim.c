@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 18:03:27 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 05:28:53 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 05:32:10 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,5 @@ char
 	while (start < end)
 		str[i++] = s1[start++];
 	str[i] = 0;
-	return (0);
+	return (NULL);
 }

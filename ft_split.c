@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 21:41:46 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/24 20:06:27 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 04:49:26 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,7 @@ char		**ft_split(char const *src, char c)
 	int		words;
 	char	**result;
 
-	if (!src)
+	if (!src || !c)
 		return (NULL);
 	i = -1;
 	words = 1;

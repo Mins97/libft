@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 18:03:27 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 04:59:07 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 05:03:07 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char
 	size_t	start;
 	size_t	end;
 
-	if(!s1 || s1[0] == '\0' || !set)
+	if (!s1 || s1[0] == '\0' || !set)
 		return (NULL);
 	start = 0;
 	while (s1[start] && ft_is_char(s1[start], set))

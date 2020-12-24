@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 18:03:27 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 04:56:17 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 04:56:55 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ static int
 {
 	size_t	i;
 
+	if(!set)
+		return (NULL);
 	i = -1;
 	while (set[++i])
 		if (set[i] == c)

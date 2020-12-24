@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/24 20:13:57 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 06:05:54 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	t_list	*list_temp;
+	t_list	*lst2;
 
-	if (!(*lst) || !lst)
-		return ;
-	list_temp = *lst;
-	while (*lst)
+	lst2 = *lst;
+	if (lst || *lst)
 	{
-		*lst = list_temp->next;
-		del(list_temp->content);
-		free(list_temp);
-		list_temp = *lst;
+		while (*lst)
+		{
+			*lst = lst2->next;
+			del(lst2->content);
+			free(lst2);
+			lst2 = *lst;
+		}
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 21:41:46 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 04:54:59 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 04:55:52 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ static void	*freee(char **result, int result_i)
 {
 	int		i;
 
-	if (!result)
-		return ;
 	i = 0;
 	while (i < result_i)
 	{
@@ -34,8 +32,6 @@ static void	put_in(char **result, char const *src, char c)
 	int		result_i;
 	int		word_i;
 
-	if (!src || !result)
-		return ;
 	src_i = 0;
 	result_i = 0;
 	word_i = 0;
@@ -62,8 +58,6 @@ static void	*mem_alloc(char **result, char const *src, char c)
 	int		result_i;
 	int		word_i;
 
-	if (!src || !result)
-		return ;
 	src_i = -1;
 	result_i = 0;
 	word_i = 0;

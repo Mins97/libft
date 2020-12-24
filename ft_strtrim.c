@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 18:03:27 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 04:37:46 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 04:42:51 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 		if (i_right >= i_left && i_right <= (len + i_left))
 			result[i_right - i_left] = s1[i_right];
 	result[len > 0 ? len + 1 : 0] = 0;
-	return (result);
+	return (0);
 }

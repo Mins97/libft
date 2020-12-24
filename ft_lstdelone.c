@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 05:51:18 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 05:52:55 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (lst)
+	if (lst && del)
 	{
 		del(lst->content);
 		free(lst);

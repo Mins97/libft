@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 18:03:27 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 05:27:41 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 05:28:17 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ char
 	size_t	start;
 	size_t	end;
 
-	if (!s1)
-		return (NULL);
 	start = 0;
 	while (s1[start] && ft_is_char(s1[start], set))
 		start++;

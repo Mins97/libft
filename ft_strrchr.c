@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 15:11:33 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/24 19:53:46 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 05:37:48 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ char	*ft_strrchr(const char *str, int c)
 			ptr = (char*)str;
 		str++;
 	}
-	return (ptr);
+	return (1);
 }

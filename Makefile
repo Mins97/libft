@@ -6,7 +6,7 @@
 #    By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/12/22 14:53:04 by minsekim          #+#    #+#              #
-#    Updated: 2020/12/24 10:13:17 by minsekim         ###   ########.fr        #
+#    Updated: 2020/12/25 12:58:04 by minsekim         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,7 +53,7 @@ FILES	= ft_memset.c		\
 		  ft_lstadd_front.c	\
 		  ft_lstsize.c		\
 		  ft_lstlast.c		\
-		  ft_lstadd_back.c	\
+		  ft_lstadd_back_bonus.c	\
 		  ft_lstdelone.c	\
 		  ft_lstclear.c		\
 		  ft_lstiter.c		\

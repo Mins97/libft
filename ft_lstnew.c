@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 13:27:06 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 13:29:51 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ t_list	*ft_lstnew(void *content)
 
 	if (!(list_new = (t_list*)malloc(sizeof(t_list))))
 		return (NULL);
-
 	if (!content)
 		list_new->content = NULL;
 	else

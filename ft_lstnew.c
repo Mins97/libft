@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 12:34:15 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 12:34:30 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,6 @@ t_list	*ft_lstnew(void *content)
 	if (!(list_new = (t_list*)malloc(sizeof(t_list))))
 		return (NULL);
 	list_new->content = content;
+	list_new->next = content;
 	return (list_new);
 }

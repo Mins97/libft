@@ -1,0 +1,22 @@
+void	ft_lstclear(t_list **lst, void (*del)(void *))
+{
+	t_list *tmp;
+	t_list *entry;
+
+	entry = *lst;
+	while (entry)
+	{
+		tmp = entry->next;
+		if (del)
+		{
+			del(entry->content);
+		}
+		free(entry);
+		entry = tmp;
+	}
+	*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;*lst = NULL;
+}
+
+split 함수명 freee
+etc 이모지 윈도우 세미콜론
+Makefile bonus: 타케팅

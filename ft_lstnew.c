@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 12:44:03 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 12:46:30 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,11 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *elem;
+	t_list	*list_new;
 
-	elem = (t_list *)malloc(sizeof(t_list));
-	if (!elem)
+	if (!(list_new = (t_list*)malloc(sizeof(t_list))))
 		return (NULL);
-	if (!content)
-		elem->content = NULL;
-	else
-	{
-		if (!(elem->content = malloc(sizeof(*(elem->content)) * sizeof(content))))
-			return (NULL);
-		elem->content = memcpy(elem->content, content, sizeof(content));
-	}
-	elem->next = NULL;
-	return (elem);
+	list_new->content = content;
+	list_new->next = NULL;
+	return (list_new);
 }

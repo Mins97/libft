@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/24 20:08:44 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 12:49:09 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,7 @@ int	ft_lstsize(t_list *lst)
 		return (0);
 	address = lst;
 	result = 1;
-	while (address->next != NULL)
-	{
+	while (address->next != NULL && result++ > 0)
 		address = address->next;
-		result++;
-	}
 	return (result);
 }

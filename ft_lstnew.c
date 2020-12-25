@@ -6,7 +6,7 @@
 /*   By: minsekim <minsekim@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/22 14:28:50 by minsekim          #+#    #+#             */
-/*   Updated: 2020/12/25 13:35:17 by minsekim         ###   ########.fr       */
+/*   Updated: 2020/12/25 13:35:52 by minsekim         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,3 @@ t_list	*ft_lstnew(void *content)
 	list_new->next = NULL;
 	return (list_new);
 }
-
